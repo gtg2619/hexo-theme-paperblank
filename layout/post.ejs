@@ -1,0 +1,20 @@
+<%- partial('_partial/head') %>
+  <link href="/css/paper.css" rel="stylesheet" type="text/css" />
+  <body>
+    <main class="markdown-body">
+      <article class="post">
+          <div class="post-title">
+            <h1 class="title"><%= page.title %></h1>
+          </div>
+          <div class="post-meta">
+            <span class="post-author" style="float: right;"><a href="/"><%- "@" + config.author %></span></a>
+            <br />
+            <span class="post-time" style="float: right;"><%- Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', day: '2-digit' }).format(new Date(page.date)).replace(/(\d+)(st|nd|rd|th)/, '$1<sup>$2</sup>'); %></span>
+            <br />
+          </div>
+          <div class="post-content"><%- page.content %></div>
+        </article>
+        <%- partial('_partial/footer') %>
+      </main>
+  </body>
+</html>

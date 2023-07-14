@@ -1,0 +1,22 @@
+# things you want to let guest know
+descriptions: "The darkest hour is just before the dawn."
+
+
+# add menu items if you want
+# make sure you have generated the pages before
+menu:
+
+
+# recommended configuration of hightlight
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: false
+  hljs: true
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
